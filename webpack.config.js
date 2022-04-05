@@ -30,10 +30,12 @@ module.exports = {
     devtool: 'source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: "/",
         assetModuleFilename: 'assets/[hash][ext][query]',
         clean: true,
     },
     devServer: {
+        historyApiFallback: true,
         static: './dist',
         port: 3000,
         hot: true
