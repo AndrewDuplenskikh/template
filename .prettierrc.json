@@ -1,0 +1,31 @@
+{
+  "singleQuote": false,
+  "tabWidth": 2,
+  "printWidth": 120,
+  "semi": true,
+  "bracketSpacing": true,
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": "*.scss",
+      "options": {
+        "singleQuote": false,
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": ["*.tsx", "*.ts", "*.js"],
+      "options": {
+        "tabWidth": 4,
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "tabWidth": 4,
+        "singleQuote": true
+      }
+    }
+  ]
+}

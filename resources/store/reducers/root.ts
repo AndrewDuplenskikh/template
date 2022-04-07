@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import {common, ICommonState} from "./common";
+import { common, ICommonState } from './common';
 
 export const rootReducer = combineReducers({
-    common
+    common,
 });
 
 export type TRootState = {
-    common: ICommonState
+    common: ICommonState;
 };

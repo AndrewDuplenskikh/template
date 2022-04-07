@@ -1,6 +1,6 @@
-import React  from "react";
+import React from 'react';
 import logo from '../../img/logo.svg';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 function InitialComponent() {
     return (
@@ -10,11 +10,7 @@ function InitialComponent() {
                 <p>
                     Edit <code>src/App.js</code> and save to reload.
                 </p>
-                <NavLink
-                    className="App-link"
-                    to="/mui"
-                    exact
-                >
+                <NavLink className="App-link" to="/mui" exact>
                     TO MUI PAGE
                 </NavLink>
             </header>

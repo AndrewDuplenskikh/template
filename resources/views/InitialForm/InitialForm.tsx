@@ -1,7 +1,7 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { TRootState } from "../../store/reducers/root";
-import { setPageLoaded } from "../../store/actions/common";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { TRootState } from '../../store/reducers/root';
+import { setPageLoaded } from '../../store/actions/common';
 
 export const InitialForm: React.FC = () => {
     const dispatch = useDispatch();
@@ -9,14 +9,12 @@ export const InitialForm: React.FC = () => {
 
     dispatch(setPageLoaded());
 
-    console.log({pageLoaded})
+    console.log({ pageLoaded });
 
     return (
         <>
             InitialForm
-            <p>
-                { pageLoaded && 'pageLoaded' }
-            </p>
+            <p>{pageLoaded && 'pageLoaded'}</p>
         </>
-    )
-}
+    );
+};

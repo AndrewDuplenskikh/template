@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 let mode = 'development';
 let target = 'web';
@@ -16,6 +17,7 @@ const plugins = [
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     }),
+    new BundleAnalyzerPlugin(),
 ];
 if (process.env.SERVE) {
     plugins.push(new ReactRefreshWebpackPlugin());
