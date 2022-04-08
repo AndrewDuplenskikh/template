@@ -55,6 +55,11 @@ export const changePhone = (value: string) => {
     };
 };
 
+/**
+ * Устанавливает ошибку для определенного поля
+ *
+ * @param value Данные об ошибке
+ * */
 export const changeError = (value: IErrorsPayload) => {
     return {
         type: CHANGE_ERROR,

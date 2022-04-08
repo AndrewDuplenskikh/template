@@ -10,6 +10,12 @@ import {
     SET_RESP,
 } from '../actions/my-form';
 
+/**
+ * Данные об ошибках
+ *
+ * @prop firstName Имя пользователя
+ * prop secondName Отчество
+ * */
 export interface IErrorsPayload {
     firstName?: boolean;
     secondName?: boolean;

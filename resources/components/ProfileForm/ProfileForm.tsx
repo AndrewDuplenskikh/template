@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, MenuItem, Link, Box, Button } from '@mui/material';
+import { TextField, MenuItem, Box, Button } from '@mui/material';
 import {
     changeFirstName,
     changeSecondName,
@@ -54,6 +54,7 @@ const ProfileForm: React.FC = (props: any) => {
                 props.changeShowModal(true);
             });
     }
+
 
     function validateFields(): boolean {
         let areErrorsExist = false;
